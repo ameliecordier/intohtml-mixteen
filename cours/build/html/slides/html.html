@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Premiers pas en HTML &mdash; HTML5 et CSS3 pour les jeunes</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="_static/slides.css" type="text/css" />
+    
+    <link rel="stylesheet" href="_static/../_static/sab-slides.css" type="text/css" />
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2016-11-01',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/common.js"></script>
+    
+    <script type="text/javascript" src="_static/slides.js"></script>
+    <script type="text/javascript" src="_static/sync.js"></script>
+    <script type="text/javascript" src="_static/controller.js"></script>
+    <script type="text/javascript" src="_static/init.js"></script>
+    
+    
+    <link rel="top" title="HTML5 et CSS3 pour les jeunes" href="index.html" />
+    <link rel="next" title="Ajoutons du style à tout ça !" href="css.html" />
+    <link rel="prev" title="Ce qu&#39;il faut savoir avant de commencer" href="intro.html" /> 
+  </head>
+  <body>
+
+<section
+   id="slide_container"
+   class='slides layout-regular'>
+
+
+  
+<article class="slide level-1" id="premiers-pas-en-html">
+
+<h1>Premiers pas en HTML<a class="headerlink" href="../html.html#premiers-pas-en-html" title="View HTML">§</a></h1>
+
+<p>HTML signifie <span class="eng">HyperText Markup Language</span>. C'est donc un langage à <strong>balises</strong>&nbsp;!</p>
+
+
+
+<div class="slide-no">1</div>
+
+
+</article>
+<article class="slide level-2" id="elements-de-base-du-html">
+
+<h2>Élements de base du HTML<a class="headerlink" href="../html.html#elements-de-base-du-html" title="View HTML">§</a></h2>
+
+
+
+
+<div class="slide-no">2</div>
+
+
+</article>
+<article class="slide level-3" id="la-balise">
+
+<h3>La balise<a class="headerlink" href="../html.html#la-balise" title="View HTML">§</a></h3>
+
+<p>Les balises permettent d'encadrer des parties de documents pour les mettre en forme.</p>
+<p>Par exemple, la balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">strong</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> permet de mettre un mot en évidence dans une phrase.</p>
+<p>Exemple de code HTML&nbsp;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span>Dans la phrase suivante, je vais mettre le mot <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>surprise<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> en évidence.
+</pre></div>
+</div>
+<p>Résultat obtenu&nbsp;:</p>
+<section class="rendered">
+  Dans la phrase suivante, je vais mettre le mot <strong>surprise</strong> en évidence.
+</section>
+
+
+<div class="slide-no">3</div>
+
+
+</article>
+<article class="slide level-3" id="balise-ouvrante-balise-fermante">
+
+<h3>Balise ouvrante, balise fermante<a class="headerlink" href="../html.html#balise-ouvrante-balise-fermante" title="View HTML">§</a></h3>
+
+<p>La plupart du temps, les balises fonctionnent par paires&nbsp;: une balise ouvrante pour marquer le début de l'encadrement, et une balise fermante pour marquer la fin.</p>
+<p>Les balises sont toujours construites de la même façon&nbsp;: chevron ouvrant, nom de la balise, chevron fermant.</p>
+<p>Pour les balises fermantes, on met un &quot;/&quot; avant le nom de la balise.</p>
+<p>Certaines balises n'ont pas besoin d'être fermées... mais nous verrons cela plus tard.</p>
+<blockquote>
+<div></div></blockquote>
+
+
+
+<div class="slide-no">4</div>
+
+
+</article>
+<article class="slide level-3" id="organisation-d-une-page-web">
+
+<h3>Organisation d'une page web<a class="headerlink" href="../html.html#organisation-d-une-page-web" title="View HTML">§</a></h3>
+
+<p>Toutes les pages web sont strucutrées de la même façon&nbsp;:</p>
+<ul class="simple">
+<li>L'entête du document (<code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">head</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>), dans laquelle on met des informations utiles, mais qui seront invisibles dans le navigateur,</li>
+<li>Le corps du document (<code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">body</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>), dans lequel on mettra le contenu de la page web.</li>
+</ul>
+
+
+
+<div class="slide-no">5</div>
+
+
+</article>
+<article class="slide level-4" id="exercice-votre-toute-premiere-page-web">
+
+<h4>Exercice&nbsp;: votre toute première page web !<a class="headerlink" href="../html.html#exercice-votre-toute-premiere-page-web" title="View HTML">§</a></h4>
+
+<ol class="arabic simple">
+<li>Créez un fichier nommé <code class="docutils literal"><span class="pre">page.html</span></code>.</li>
+<li>Recopiez le code suivant dans le fichier.</li>
+<li>Sauvegardez votre fichier.</li>
+<li>Ouvrez le fichier avec un navigateur web (Firefox, Chrome, etc.)</li>
+</ol>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ma première page web<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+   Yes! J&#39;ai fait ma première page web !
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Avertissement</p>
+<p class="last">Veillez bien à sauvegarder votre fichier au format <code class="docutils literal"><span class="pre">html</span></code> et non au format <code class="docutils literal"><span class="pre">txt</span></code>.</p>
+</div>
+
+
+
+<div class="slide-no">6</div>
+
+
+</article>
+<article class="slide level-3" id="structure-minimale-d-une-page-ligne-par-ligne">
+
+<h3>Structure minimale d'une page, ligne par ligne<a class="headerlink" href="../html.html#structure-minimale-d-une-page-ligne-par-ligne" title="View HTML">§</a></h3>
+
+<ul class="simple">
+<li><code class="code html docutils literal"><span class="comment preproc"><span class="pre">&lt;!DOCTYPE</span> <span class="pre">html&gt;</span></span></code>&nbsp;: renseigne le navigateur sur la version du langage HTML utilisé.</li>
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">html</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>&nbsp;: début du document.</li>
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">head</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>&nbsp;: début de l'entête du document.</li>
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">title</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>&nbsp;: titre du document (recherchez où il apparaît !).</li>
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">meta</span></span> <span class="name attribute"><span class="pre">charset</span></span><span class="operator"><span class="pre">=</span></span><span class="literal string"><span class="pre">&quot;UTF-8&quot;</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>&nbsp;: encodage du document.</li>
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">body</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>&nbsp;: début du corps du document (partie visible).</li>
+</ul>
+
+
+
+<div class="slide-no">7</div>
+
+
+</article>
+<article class="slide level-3" id="quelques-balises">
+
+<h3>Quelques balises<a class="headerlink" href="../html.html#quelques-balises" title="View HTML">§</a></h3>
+
+<p>Il est temps de découvrir quelques balises qui vont vous permettre d'organiser votre page web.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">h1</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> à <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">h6</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>niveaux de titres</td>
+</tr>
+<tr class="row-even"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">em</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>emphase faible</td>
+</tr>
+<tr class="row-odd"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">strong</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>emphase forte</td>
+</tr>
+<tr class="row-even"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">p</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>paragraphe</td>
+</tr>
+<tr class="row-odd"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">ol</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>liste ordonnée</td>
+</tr>
+<tr class="row-even"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">ul</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>liste non-ordonnée</td>
+</tr>
+<tr class="row-odd"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">li</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>item d'une liste</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<div class="slide-no">8</div>
+
+
+</article>
+<article class="slide level-3" id="le-fonctionnement-des-listes">
+
+<h3>Le fonctionnement des listes<a class="headerlink" href="../html.html#le-fonctionnement-des-listes" title="View HTML">§</a></h3>
+
+<p>Exemple de code HTML&nbsp;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Pain<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Beurre<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Sucre<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Manger<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Boire<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Résultat obtenu&nbsp;:</p>
+<section class="rendered">
+<ul>
+  <li>Pain</li>
+  <li>Beurre</li>
+  <li>Sucre</li>
+</ul>
+
+<ol>
+  <li>Manger</li>
+  <li>Boire</li>
+</ol>
+
+</section>
+
+
+<div class="slide-no">9</div>
+
+
+</article>
+<article class="slide level-4" id="exercice-utiliser-des-balises">
+
+<h4>Exercice&nbsp;: utiliser des balises<a class="headerlink" href="../html.html#exercice-utiliser-des-balises" title="View HTML">§</a></h4>
+
+<ol class="arabic simple">
+<li>Téléchargez le fichier minimal disponible <a class="reference external" href="_static/exercices/exercicesBalises.html">ici</a> (cliquez avec le bouton droit, puis &quot;enregister sous&quot; ou &quot;enregistrer la cible du lien sous).</li>
+<li>Sauvegargez-le dans le même répertoire que votre premier exercice. Attention à bien enregistrer au format <code class="docutils literal"><span class="pre">html</span></code>.</li>
+<li>Utilisez les balises que vous venez de découvrir pour enrichir le texte et obtenir un résultat qui ressemble à l'image ci-dessous.</li>
+</ol>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/exercice-raw.png"><img alt="Résultat attendu" src="_images/exercice-raw.png" style="width: 200px;" /></a>
+</div>
+
+
+
+<div class="slide-no">10</div>
+
+
+</article>
+<article class="slide level-3" id="ajoutons-des-images">
+
+<h3>Ajoutons des images<a class="headerlink" href="../html.html#ajoutons-des-images" title="View HTML">§</a></h3>
+
+<p>Voici une nouvelle balise&nbsp;: <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">img</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>.</p>
+<p>Cette balise permet d'inclure des images dans vos pages web.</p>
+<p>Le code suivant permet d'inclure l'image nommée <code class="docutils literal"><span class="pre">html5.png</span></code>, située dans le répertoire <code class="docutils literal"><span class="pre">images</span></code> dans votre page web.</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;images/html5.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Logo HTML 5&quot;</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Les éléments <code class="docutils literal"><span class="pre">src</span></code> et <code class="docutils literal"><span class="pre">alt</span></code> sont appelés des <em>attributs</em>. Les attributs permettent de préciser le comportement d'une balise. Ici, <code class="docutils literal"><span class="pre">src</span></code> (pour <em>source</em>) indique où trouver l'image, et <code class="docutils literal"><span class="pre">alt</span></code> (pour <em>alternative</em>) indique quel texte alternatif doit s'afficher en cas d'impossibilité d'affichage de l'image.</p>
+
+
+
+<div class="slide-no">11</div>
+
+
+</article>
+<article class="slide level-4" id="index-5">
+
+<h4>Exercice&nbsp;: utiliser des balises<a class="headerlink" href="../html.html#index-5" title="View HTML">§</a></h4>
+
+<ol class="arabic">
+<li><p class="first">Créez un répertoire <code class="docutils literal"><span class="pre">images</span></code> au même endroit que vos pages web.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Récupérez les trois images suivantes et enregistez-les dans le répertoire images&nbsp;:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference external" href="_static/html5.png">html5.png</a></li>
+<li><a class="reference external" href="_static/css3.png">css3.png</a></li>
+<li><a class="reference external" href="_static/w3c.png">w3c.png</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Utilisez la nouvelle balise que vous venez de découvrir pour inclure ces trois images au bons endroits dans votre page web. Vous devriez voir le résultat suivant.</p>
+</li>
+</ol>
+<div class="align-center figure">
+<a class="reference internal image-reference" href="_images/exercice-raw-with-image.png"><img alt="Résultat attendu" src="_images/exercice-raw-with-image.png" style="width: 200px;" /></a>
+</div>
+
+
+
+<div class="slide-no">12</div>
+
+
+</article>
+<article class="slide level-3" id="ajoutons-des-liens">
+
+<h3>Ajoutons des liens<a class="headerlink" href="../html.html#ajoutons-des-liens" title="View HTML">§</a></h3>
+
+<p>Encore une nouvelle balise&nbsp;!</p>
+<p>Pour faire des liens entre les pages, on utilise la balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">a</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>.</p>
+<p>Par exemple, le code suivant permet de faire le lien vers le fichier nommé <code class="docutils literal"><span class="pre">page2.html</span></code> qui se trouve dans le même répertoire que le fichier courant&nbsp;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;page2.html&quot;</span><span class="p">&gt;</span>Lien vers une autre page<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+
+
+
+<div class="slide-no">13</div>
+
+
+</article>
+<article class="slide level-4" id="exercice-ajouter-des-liens-dans-la-page">
+
+<h4>Exercice&nbsp;: ajouter des liens dans la page<a class="headerlink" href="../html.html#exercice-ajouter-des-liens-dans-la-page" title="View HTML">§</a></h4>
+
+<p>À vous de jouer&nbsp;: essayez de créer des liens pour pouvoir naviguer entre les deux pages que vous venez de réaliser.</p>
+<p>Quand vous aurez fini, vous pourrez passer à la section suivante&nbsp;!</p>
+
+
+
+<div class="slide-no">14</div>
+
+
+</article>
+
+</section>
+
+<section id="slide_notes">
+
+</section>
+
+  </body>
+</html>
